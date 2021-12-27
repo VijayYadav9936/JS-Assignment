@@ -1,0 +1,1 @@
+LWC is a new programming model levering the recent web standards. Rather than being a totally custom and development wise rigid framework, It's quite flexible. It's mostly the common Web Standards and a Thin Layer of Specialized services to make it a perfect fit for Modern Rich UI Implementations in Salesforc

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SignUp</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./js/bootstrap.js">
+    <link rel="stylesheet" href="./css/signupstyle.css">
+</head>
+
+<body>
+    <div class="container" id="cont">
+        <div class="cols-lg-8 m-auto d-block maindiv">
+            <h2 class="pt-5 text-center pb-2">Sign Up</h2>
+            <form id="form" onsubmit="validation(event)" class="pb-2" method="get" >
+
+                <!-- user input field -->
+                <div class="form-group">
+                    <label for="user">UserId:</label>
+                    <input type="text" name="user" class="form-control" id="user"
+                    pattern="[A-Z a-z]{1,15}" placeholder="Please enter user Id here."required>
+                    <span class="text-success font-weight-bold" id="spanuser"></span>
+                </div>
+
+                <!-- password input filed -->
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" class="form-control" id="password"
+                        placeholder="Please enter user Id here.">
+                    <span class="text-success font-weight-bold" id="spanpass"></span>
+                </div>
+
+                <!-- confirmPass -->
+                <div class="form-group">
+                    <label for="confirmpass">Confirm Password:</label>
+                    <input type="password" name="confirmpass" class="form-control" id="confirmpass"
+                        placeholder="Please enter user Id here.">
+                    <span class="text-success font-weight-bold" id="spanconfirmpass"></span>
+                </div>
+                <!-- EmailId Input field -->
+                <div class="form-group">
+                    <label for="email">Email:</label>
+                    <input type="email" name="email" class="form-control" id="useremail"
+                        placeholder="Please enter user Id here.">
+                    <span class="text-success font-weight-bold" id="spanemail"></span>
+                </div>
+
+                <!-- Submit Button -->
+                <div class="form-group ml-3">
+                    <div>
+                        <button  id="btn">LogIN</button>
+                        <a href="./login.html" class="href">Already have account..</a>
+                    </div>
+                </div>
+            </form>
+        </div>
+    </div>
+    <script src="./index.js"></script>
+</body>
+
+</html>

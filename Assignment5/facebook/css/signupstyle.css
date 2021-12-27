@@ -1,0 +1,35 @@
+.maindiv{
+    background-color: rgba(255, 69, 0,0.9);
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 350px;
+    height: 600px;
+    border-radius: 5px;
+
+   
+}
+#loginbtn{
+    border-radius: 5px;
+    float: right;
+    background-color: rgb(186, 189, 238);
+    
+}
+#btn{
+    border-radius: 5px;
+    float: right;
+    background-color: rgb(186, 189, 238);
+}
+#cont{
+    margin-top: 30px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    background-image: url(../image/4002676.jpg);
+    background-size: cover;
+    background-position: center;
+}
+.href a{
+    text-decoration: none;
+    color: black;
+}

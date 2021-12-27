@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="../js/bootstrap.js">
+    <link rel="stylesheet" href="../css/bootstrap.css">
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+
+<body>
+    <div class="container">
+        <h2 class="text-success text-center pt-5">Registration Form</h2>
+        <div class="cols-lg-8 m-auto d-block">
+            <form  method="get" onsubmit={validation(event)}>
+                <div class="form-group">
+                    <label>User</label>
+                    <input type="text" name="user" class="form-control" id="user" placeholder="Please enter user id">
+                    <span id="username" class="text-danger font-weight-bold"></span>
+                </div>
+                <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="password" name="pass" class="form-control" id="password"
+                        placeholder="Please enter password">
+                    <span id="pass" class="text-danger font-weight-bold"></span>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="user">Confirm Password</label>
+                    <input type="password" name="cnfpass" class="form-control" id="confirmpass"
+                        placeholder="Re-enter password">
+                    <span id="cnfpass" class="text-danger font-weight-bold"></span>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="user">Mobile Number</label>
+                    <input type="number" name="number" class="form-control" id="mobile"
+                        placeholder="Please enter Contact Number">
+                    <span id="number" class="text-danger font-weight-bold"></span>
+
+                </div>
+
+                <div class="form-group">
+                    <label for="user">E-mail</label>
+                    <input type="email" name="mail" class="form-control" id="emailids"
+                        placeholder="Please enter user id">
+                    <span id="emlids" class="text-danger font-weight-bold"></span>
+
+                </div>
+                <div class="form group">
+                    <button id="submitbutton"><a href='./welcome.html' alt='#'>Submit</a></button>
+                    <input type="submit" name="submit" class="btn btn-success" id="submitbutton">
+
+                </div>
+            </form>
+
+
+        </div>
+    </div>
+
+
+
+
+    <script type="text/javascript">
+        function validation(event) {
+            var user = document.getElementById('user').value;
+            var password = document.getElementById('password').value;
+            var confirmpass = document.getElementById('confirmpass').value;
+            var mobile = document.getElementById('mobile').value;
+            var emailids = document.getElementById('emailids').value;
+           
+            if (user == "") {
+                document.getElementById('username').innerHTML = " ** Please fill the user input field";
+                return false;
+            }
+
+            if (user == "") {
+                document.write().innerHTML = "please fill req field"
+            }
+
+            if ((user.length <= 2) || (user.length >= 20)) {
+                document.getElementById('username').innerHTML = " ** Character length must be between 2 to 20";
+                return false;
+            }
+            if (!isNaN(user) == true) {
+                document.getElementById('username').innerHTML = " ** Only character are allowed";
+                return false;
+            }
+           // password validation
+
+            if (password == "") {
+                document.getElementById('pass').innerHTML = " ** Please fill the password input field";
+                return false;
+            }
+
+            if ((password.length <= 05) || (password.length > 20)) {
+                document.getElementById('pass').innerHTML = " ** Password length must be more than 10 character.";
+                return false;
+            }
+            //Confirm validation
+            if (password != confirmpass) {
+                document.getElementById('cnfpass').innerHTML = " ** Please fill the same password";
+                return false;
+            }
+            if (mobile == "") {
+                document.getElementById('number').innerHTML = " ** Please fill the mobile number field";
+                return false;
+            }
+            else {
+                document.getElementById('number').innerHTML = "SUCCESS"
+                return true;
+            }
+            //Mobile validation
+            if (mobile.length != 10) {
+                document.getElementById('number').innerHTML = " ** Contact Number Must be in 10 digit";
+                return false;
+            }
+            //email validation
+            if (emailids == "") {
+                document.getElementById('emlids').innerHTML = " ** Please fill the email field";
+                return false;
+            }
+            if (emailids.indexOf('@') <= 0) {
+                document.getElementById('emlids').innerHTML = " ** @ invalid position";
+                return false;
+            }
+        }
+    </script>
+</body>
+
+</html>

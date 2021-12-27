@@ -1,0 +1,20 @@
+.container {
+   
+    padding: 10px;
+}
+.container h2{
+    color: brown;
+    font-family: cursive;
+    text-align: center;
+    font-size: 40px;
+}
+.btn {
+    margin: 1px;
+    
+}
+.vijay{
+    list-style: none;
+}
+.buttun4{
+    align-items: center;
+}

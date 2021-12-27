@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Sign In Form</title>
+    <link rel="stylesheet" href="./css/bootstrap.css">
+    <link rel="stylesheet" href="./js/bootstrap.js">
+    <link rel="stylesheet" href="./css/style.css">
+</head>
+
+<body>
+    <div class="container" id="cont">
+        <div class="cols-lg-8 m-auto d-block maindiv">
+            <h2 class=" pt-5 text-center pb-2">Log In</h2>
+            <form method="get"  class="pb-2">
+
+                <!-- user input field -->
+                <div class="form-group">
+                    <label for="user">UserId:</label>
+                    <input type="text" name="user" class="form-control" id="user"
+                        placeholder="Please enter user Id here.">
+                    <span class="text-succes font-weight-bold" id="spanuser"></span>
+                </div>
+
+                <!-- password input filed -->
+                <div class="form-group">
+                    <label for="password">Password:</label>
+                    <input type="password" name="password" class="form-control" id="password"
+                        placeholder="Please enter user Id here.">
+                    <span class="text-succes font-weight-bold" id="spanpass"></span>
+                </div>
+                <!-- Submit Button -->
+                <div class="form-group ml-3">
+                    <div>
+                        <button onclick="validation()" id="btn">LogIN</button>
+                        <a href="./index.html" class="href">Create a new account</a>
+                    </div>
+            </form>
+        </div>
+    </div>
+    <script src="./login.js"></script>
+
+
+</body>
+</html>

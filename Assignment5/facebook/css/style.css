@@ -1,0 +1,35 @@
+*{
+    margin: 0%;
+    padding: 0%;
+    font-family: cursive;
+}
+.maindiv{
+    background-color: hsla(16, 100%, 50%,0.9);
+    padding-left: 8px;
+    padding-right: 8px;
+    width: 350px;
+    height: 400px;
+    border-radius: 5px;
+  
+}
+#btn{
+    border-radius: 5px;
+    float: right;
+    background-color: rgb(186, 189, 238);
+    
+}
+#cont{
+    margin-top: 100px;
+    padding-top: 50px;
+    padding-bottom: 50px;
+    height: 600px;
+    background-color: aquamarine;
+    border-radius: 5px;
+    /* background-image: url(./image/dark-paper.jpg); */
+    background-repeat: no-repeat;
+    background-size: cover;
+}
+.href{
+    color: black;
+    text-decoration: none;
+}
